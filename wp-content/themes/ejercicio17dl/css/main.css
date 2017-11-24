@@ -1,0 +1,176 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.4;
+	font-size: 18px;
+	overflow-x: hidden;
+}
+
+/* SLIDER */
+.bg1 {
+	background-image: url(../images/bg.jpeg);
+}
+
+.bg2 {
+	background-image: url(../images/bg2.jpeg);
+}
+
+.bg3 {
+	background-image: url(../images/bg3.jpeg);
+}
+
+.bg1, .bg2, .bg3 {
+	min-height: 600px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom;
+	background-size: cover;
+}
+
+/* NAVBAR + HEADER */
+
+header {
+	position: relative;
+	z-index: 100;
+}
+
+.brand img {
+	max-width: 65%;
+}
+
+nav {
+	position: absolute;
+	top: 20px;
+	z-index: 2000;
+	background-color: rgba(0, 0, 0, .3);
+	height: auto;
+	width: 100vw;
+}
+
+nav ul {
+	text-align: center;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	padding-right: 15px;
+}
+
+nav ul li a {
+	color: #ddd;
+}
+
+nav ul li a:hover, nav ul li a:active {
+	text-decoration: none;
+	color: #fff;
+}
+
+header .title {
+	padding-top: 30px;
+	text-align: center;
+	color: #fff;
+	font-size: 2rem;
+	position: absolute;
+	top: 20vh;
+	left: 0;
+}
+
+.title h1 {
+	padding-bottom: 15px;
+}
+
+.title p {
+	padding-top: 15px;
+	font-size: 1.4rem;
+}
+
+/* INFO1 */
+
+.info1 {
+	text-align: center;
+}
+
+.info1 h3 {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-weight: bold;
+}
+
+.info1 img {
+	max-width: 70%;
+}
+
+.border_top {
+	border-top: 1px #bebebe solid;
+}
+
+/* INFO2 */
+
+.info2 {
+	background-color: #dddddd;
+	padding-top: 25px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+/* CONTACT */
+
+.contact {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.contact_info {
+	padding-bottom: 30px;
+}
+
+.contact_form input, .contact_form button {
+	margin: 3px 3px;
+	border-radius: 5px;
+	border: 1px solid #aeaeae;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: #1e1d22;
+	color: #fff;
+	padding: 15px 0;
+}
+
+/* -------- TABLET VER. -------- */
+
+@media (min-width: 767px) {
+
+
+nav ul {
+	margin-top: 50px;
+}
+
+header {
+	left: 5vh;
+}
+
+
+/* -------- DESKTOP VER. -------- */
+
+@media (min-width: 991px) {
+
+nav div.row {
+	margin-left: 40vh;
+}
+
+nav ul {
+	margin-top: 50px;
+}
+
+header {
+	left: 25vh;
+}
+
+}
